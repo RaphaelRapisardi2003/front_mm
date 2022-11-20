@@ -1,0 +1,45 @@
+header {
+  background: var(--gold);
+  height: 60px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: var(--white);
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.3);
+  position: fixed;
+}
+
+.logo a {
+  color: var(--white);
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.navbar {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.navbar li a {
+  color: var(--white);
+  font-size: 1.2rem;
+  padding-bottom: 0.4rem;
+}
+
+/*.navbar li a:hover {
+  border-bottom: 1px solid;
+}
+*/.navbar li a:after{
+  content: "";
+  width: 0%;
+  height: 2px;
+  background-color: #FFFFFF;
+  display: block;
+  transition: all 0.2s;
+}
+.navbar li a:hover:after{
+  content: "";
+  width: 100%;
+  transition: all 0.2s;
+}
